@@ -111,9 +111,9 @@ cd DAFDeTr
 #### Waymo dataset 
 - Single GPU training
     1. Add the present working directory to PYTHONPATH `export PYTHONPATH=$(pwd):$PYTHONPATH`
-    2. `python tools/train.py configs/dafdetr_res_voxel_waymo_L.py --work-dir {WORK_DIR}`
+    2. `python tools/train.py configs/dafdetr_voxel_waymo_L.py --work-dir {WORK_DIR}`
 - Multi GPU training
-  `tools/dist_train.sh configs/dafdetr_res_voxel_waymo_L.py {GPU_NUM} --work-dir {WORK_DIR}`
+  `tools/dist_train.sh configs/dafdetr_voxel_waymo_L.py {GPU_NUM} --work-dir {WORK_DIR}`
 
 ### Testing
 
@@ -127,8 +127,8 @@ cd DAFDeTr
 #### Waymo dataset 
 - Single GPU testing
     1. Add the present working directory to PYTHONPATH `export PYTHONPATH=$(pwd):$PYTHONPATH`
-    2. `python tools/test.py configs/dafdetr_res_voxel_waymo_L.py /path/to/ckpt --eval waymo`
-  `tools/dist_test.sh configs/dafdetr_res_voxel_waymo_L.py /path/to/ckpt {GPU_NUM} --eval waymo`
+    2. `python tools/test.py configs/dafdetr_voxel_waymo_L.py /path/to/ckpt --eval waymo`
+  `tools/dist_test.sh configs/dafdetr_voxel_waymo_L.py /path/to/ckpt {GPU_NUM} --eval waymo`
 
 ## Acknowlegements
 We sincerely thank the contributors for their open-source code: [MMCV](https://github.com/open-mmlab/mmcv), [MMDetection](https://github.com/open-mmlab/mmdetection), [MMDetection3D](https://github.com/open-mmlab/mmdetection3d).
