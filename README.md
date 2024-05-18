@@ -28,8 +28,8 @@ Existing approaches fuse the LiDAR points and image pixels by hard association r
 ### nuScenes dataset
 | Config | mAP | NDS | |
 | :---: | :---: |:---: |:---: |
-dafdetr_res_voxel_nus_L.py | 63.4 | 69.1 | weights
-dafdetr_res_voxel_nus_LC.py | 64.6 | 69.3 | weights
+dafdetr_res_voxel_nus_L.py | 63.4 | 69.1 | [weights](https://drive.google.com/file/d/1K5Y8-c4z__AJwaF23ThKu7zqZoWSQwXy/view?usp=sharing)
+dafdetr_res_voxel_nus_LC.py | 64.6 | 69.3 | [weights](https://drive.google.com/file/d/1M3AWkHN7rUB9BzXey0hKQn5o_XBwSnaO/view?usp=sharing)
 
 ### Waymo dataset (mAPH)
 | Config | Veh. L1 | Veh. L2 | Ped. L1  | Ped. L2  | Cyc. L1 | Cyc. L2 |
@@ -101,7 +101,7 @@ cd DAFDeTr
 ### Training
 
 #### nuScenes dataset
-- Download the [backbone pretrained weights]() to `ckpts/`
+- Download the [backbone pretrained weights](https://drive.google.com/file/d/10zwNrqXTwdPgoIt9mvGd4LMGC3Fq9Lcr/view?usp=sharing) to `ckpts/`
 - Single GPU training
     1. Add the present working directory to PYTHONPATH `export PYTHONPATH=$(pwd):$PYTHONPATH`
     2. `python tools/train.py configs/dafdetr_res_voxel_nus_L.py --work-dir {WORK_DIR}` for LiDAR-only model and `python tools/train.py configs/dafdetr_res_voxel_nus_LC.py --work-dir {WORK_DIR} --cfg-options load_from=/path/to/lidar-only/model` for LiDAR-Camera fusion model.
