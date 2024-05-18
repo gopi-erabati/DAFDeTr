@@ -28,13 +28,13 @@ Existing approaches fuse the LiDAR points and image pixels by hard association r
 ### nuScenes dataset
 | Config | mAP | NDS | |
 | :---: | :---: |:---: |:---: |
-dafdetr_res_voxel_nus_L.py | 63.4 | 69.1 | [weights](https://drive.google.com/file/d/1K5Y8-c4z__AJwaF23ThKu7zqZoWSQwXy/view?usp=sharing)
-dafdetr_res_voxel_nus_LC.py | 64.6 | 69.3 | [weights](https://drive.google.com/file/d/1M3AWkHN7rUB9BzXey0hKQn5o_XBwSnaO/view?usp=sharing)
+[dafdetr_res_voxel_nus_L.py](configs/dafdetr_res_voxel_nus_L.py) | 63.4 | 69.1 | [weights](https://drive.google.com/file/d/1K5Y8-c4z__AJwaF23ThKu7zqZoWSQwXy/view?usp=sharing)
+[dafdetr_res_voxel_nus_LC.py](configs/dafdetr_res_voxel_nus_LC.py) | 64.6 | 69.3 | [weights](https://drive.google.com/file/d/1M3AWkHN7rUB9BzXey0hKQn5o_XBwSnaO/view?usp=sharing)
 
 ### Waymo dataset (mAPH)
 | Config | Veh. L1 | Veh. L2 | Ped. L1  | Ped. L2  | Cyc. L1 | Cyc. L2 |
 | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  |
-| dafdetr_res_voxel_waymo_L.py | 71.8 | 63.5 | 61.7 | 54.2 | 66.0 | 63.5 |
+| [dafdetr_voxel_waymo_L.py](configs/dafdetr_voxel_waymo_L.py) | 71.8 | 63.5 | 61.7 | 54.2 | 66.0 | 63.5 |
 
 We can not distribute the model weights on Waymo dataset due to the [Waymo license terms](https://waymo.com/open/terms).
 
