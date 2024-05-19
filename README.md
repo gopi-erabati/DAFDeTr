@@ -121,13 +121,14 @@ cd DAFDeTr
 - Single GPU testing
     1. Add the present working directory to PYTHONPATH `export PYTHONPATH=$(pwd):$PYTHONPATH`
     2. `python tools/test.py configs/dafdetr_res_voxel_nus_L.py /path/to/ckpt --eval mAP` for LiDAR-only model and `python tools/test.py configs/dafdetr_res_voxel_nus_LC.py /path/to/ckpt --eval mAP` for LiDAR-Camera fusion model.
-- Multi GPU training
+- Multi GPU testing
   `tools/dist_test.sh configs/dafdetr_res_voxel_nus_L.py /path/to/ckpt {GPU_NUM} --eval mAP` for LiDAR-only model and `tools/dist_test.sh configs/dafdetr_res_voxel_nus_LC.py /path/to/ckpt {GPU_NUM} --eval mAP` for LiDAR-Camera fusion model.
 
 #### Waymo dataset 
 - Single GPU testing
     1. Add the present working directory to PYTHONPATH `export PYTHONPATH=$(pwd):$PYTHONPATH`
     2. `python tools/test.py configs/dafdetr_voxel_waymo_L.py /path/to/ckpt --eval waymo`
+- Multi GPU testing
   `tools/dist_test.sh configs/dafdetr_voxel_waymo_L.py /path/to/ckpt {GPU_NUM} --eval waymo`
 
 ## Acknowlegements
